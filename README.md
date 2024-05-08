@@ -13,7 +13,7 @@ git clone https://github.com/abdulmujeebcs/todo-app
 ```
 
 ```bash
-composer install
+docker-compose run composer install
 ```
 
 Update your `.env` file Information before serving the application
