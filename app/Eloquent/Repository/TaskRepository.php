@@ -13,7 +13,9 @@ class TaskRepository implements TaskInterface {
 
     public function findAll($filterBy) {
         $perPage = config('app.per_page');
-        $query = $this->model;
+        
+        $query = $this->model
+        ->select(['id', 'title', 'description', 'status']);
         
         if ($filterBy->title) {
             $query = $query->where('title', 'like', $filterBy->title . '%');

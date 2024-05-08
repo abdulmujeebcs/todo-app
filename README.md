@@ -32,10 +32,14 @@ docker-compose run artisan key:generate
 docker-compose run artisan optimize
 ```
 
-## Run Migrations
 
 ```bash
 docker-compose run artisan migrate
+```
+
+## Run Feature Tests
+```bash
+sudo docker-compose run artisan test
 ```
 
 ## Contributing
