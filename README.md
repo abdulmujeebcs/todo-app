@@ -28,11 +28,6 @@ docker-compose run composer install
 docker-compose run artisan key:generate
 ```
 
-### Ubuntu users (need to automate this in docker)
-```bash
-sudo chmod 777 -R storage
-```
-
 ```bash
 docker-compose run artisan optimize
 ```
@@ -41,6 +36,12 @@ docker-compose run artisan optimize
 ```bash
 docker-compose run artisan migrate
 ```
+
+### Ubuntu users (need to automate this in docker)
+```bash
+sudo chmod 777 -R storage
+```
+
 
 ## Run Feature Tests
 ```bash
