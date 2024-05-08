@@ -57,6 +57,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'per_page' => env('API_PER_PAGE', 10),
+
     'asset_url' => env('ASSET_URL'),
 
     /*
@@ -168,6 +170,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ResponseMacroServiceProvider::class
     ])->toArray(),
 
     /*
